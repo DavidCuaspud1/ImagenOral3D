@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CITAS IMAGEN ORAL 3D</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <center><img src="logo.jpg"/></center>
+      <strong><h3 class="formulario__subtitulo">AGENDAR CITAS</h3></strong>
+      <strong><label for="fecha" class="formulario__label">FECHA CITA</label></strong>
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+	  
+	  <strong><label for="medico" class="formulario__label">NOMBRE DE MEDICO O CLINICA QUE ORDENA</label></strong>
+      <input
+        id="medico"
+        type="text"
+        class="formulario__input"
+        placeholder="DIGITE EL NOMBRE"
+      /> 
+      <strong><label for="cliente" class="formulario__label">NOMBRE COMPLETOS</label></strong>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="DIGITE EL NOMBRE COMPLETO"
+      />
+	  
+	  <strong><label for="edad" class="formulario__label">EDAD</label></strong>
+      <input
+        id="edad"
+        type="text"
+        class="formulario__input"
+        placeholder="DIGITE EDAD"
+      />
+	  <strong><label for="numero" class="formulario__label">NUMERO DE CELULAR</label></strong>
+      <input
+        id="numero"
+        type="text"
+        class="formulario__input"
+        placeholder=" DIGITE EL NUMERO DE CELULAR"
+      />
+	  <strong><label for="examen" class="formulario__label">EXAMENES A REALIZAR</label></strong>
+      <input
+        id="examen"
+        type="text"
+        class="formulario__input"
+        placeholder="DIGITE EL EXAMEN"
+      />     
+      <div id="respuesta"></div>
+      <button id="submit" class="formulario__submit">ENVIAR A WHATSAPP</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
+
