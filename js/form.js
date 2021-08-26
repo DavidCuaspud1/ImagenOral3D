@@ -20,7 +20,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*Citas*%0A%0A
 		*Fecha Remision*%0A
 		${fecha}%0A
-		*Clinica o Doctor*%0A
+		*Clinica o Doctor(a)*%0A
 		${medico}%0A
 		*Datos Paciente*%0A
 		*Nombre Completo del Paciente*%0A
@@ -32,7 +32,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*Examenes por realizar*%0A
 		${examen}%0A`;
 
-  if (cliente === "" || fecha === "") {
+  if (cliente === "" || fecha === "" || medico === "" || edad === "" || numero === "" || examen === "") {
     resp.classList.add("fail");
     resp.innerHTML = `Faltan algunos datos, ${cliente}`;
     return false;

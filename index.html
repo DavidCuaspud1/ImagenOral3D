@@ -22,14 +22,14 @@
         pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
       />
 	  
-	  <strong><label for="medico" class="formulario__label">NOMBRE DE MEDICO O CLINICA QUE ORDENA</label></strong>
+	  <strong><label for="medico" class="formulario__label">NOMBRE DE DOCTOR(A) O CLINICA QUE ORDENA</label></strong>
       <input
         id="medico"
         type="text"
         class="formulario__input"
         placeholder="DIGITE EL NOMBRE"
       /> 
-      <strong><label for="cliente" class="formulario__label">NOMBRE COMPLETOS</label></strong>
+      <strong><label for="cliente" class="formulario__label">NOMBRES COMPLETOS</label></strong>
       <input
         id="cliente"
         type="text"
@@ -52,12 +52,12 @@
         placeholder=" DIGITE EL NUMERO DE CELULAR"
       />
 	  <strong><label for="examen" class="formulario__label">EXAMENES A REALIZAR</label></strong>
-      <input
+      <textarea
         id="examen"
         type="text"
         class="formulario__input"
         placeholder="DIGITE EL EXAMEN"
-      />     
+      rows= "3"></textarea>     
       <div id="respuesta"></div>
       <button id="submit" class="formulario__submit">ENVIAR A WHATSAPP</button>
     </form>
